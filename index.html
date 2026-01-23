@@ -5,26 +5,52 @@
     <meta charset="UTF-8">
     <title>Portfolio - Juan Jesús González Hernández</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
     <header class="header">
-        <h1>JJHernan</h1>
+        <div class="background-shapes">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+        <h1 class="hero-title">Juan Jesús González Hernández</h1>
         <p>Desarrollador Junior · Java · C# · Seguridad</p>
+        <div class="header-buttons">
+            <a class="cv-button" href="CV_JJHernan.pdf" target="_blank">
+                <i class="fa-solid fa-file-arrow-down"></i>
+                Descargar CV
+            </a>
+
+            <a class="contact-button" href="https://www.linkedin.com/in/juan-jes%C3%BAs-gonz%C3%A1lez-hern%C3%A1ndez-28116b3a8/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+                Contacto
+            </a>
+        </div>
     </header>
     <main>
-        <h1>Hola, soy Juan Jesús González Hernández</h1>
+        <div class="sobremi">
+            <h1>Sobre mi</h1>
+        </div>
         <p>
             Desarrollador Junior con formación en Desarrollo de Aplicaciones Multiplataforma.
-            Trabajo principalmente con Java y C#, y tengo interés en la ciberseguridad aplicada
-            al desarrollo de software.
+            Trabajo principalmente con Java y C#, desarrollando aplicaciones de escritorio
+            con un enfoque en código limpio, estructurado y en la experiencia de usuario.
+            Me interesa especialmente la ciberseguridad aplicada al desarrollo de software,
+            ámbito en el que continúo formándome de manera autodidacta, así como el aprendizaje
+            de Python para ampliar mis competencias técnicas, mientras busco mi primera
+            oportunidad profesional.
         </p>
 
         <h2>Proyectos</h2>
-
+        <p class="section-description">
+            Proyectos personales desarrollados para aplicar y reforzar mis conocimientos en
+            programación, buenas prácticas y seguridad.
+        </p>
         <div class="projects">
             <div class="card">
-                <h3>To Do List – Java</h3>
+                <h3>To Do List – Java <i class="fa-brands fa-java project-icon2"></i></h3>
                 <p>
                     Aplicación de escritorio para gestionar tareas de manera sencilla y visual.
                     Permite añadir, editar, eliminar y marcar tareas como completadas. Incluye persistencia de datos y
@@ -36,7 +62,7 @@
             </div>
 
             <div class="card">
-                <h3>Gestor de Contraseñas – C# WPF</h3>
+                <h3>Gestor de Contraseñas – C# WPF <i class="fa-solid fa-code project-icon"></i></h3>
                 <p>
                     Aplicación de escritorio desarrollada con C# y WPF que implementa encriptación
                     para el almacenamiento seguro de contraseñas.
@@ -46,17 +72,48 @@
                 </a>
             </div>
         </div>
-        <h2>Contacto</h2>
-        <p>
-            <a href="https://github.com/JJHernan-dev">GitHub</a>
+
+        <h2>Tecnologías</h2>
+        <p class="section-description">
+            Tecnologías con las que he trabajado durante mi formación y en proyectos personales,
+            así como otras que continúo aprendiendo.
         </p>
+
+        <div class="tech">
+            <span><i class="fa-brands fa-java"></i> Java</span>
+            <span><i class="fa-solid fa-code"></i> C#</span>
+            <span><i class="fa-solid fa-desktop"></i> WPF</span>
+            <span><i class="fa-solid fa-database"></i> SQL</span>
+            <span><i class="fa-brands fa-git-alt"></i> Git / GitHub</span>
+            <span><i class="fa-brands fa-html5"></i> HTML</span>
+            <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+            <span class="learning"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="learning"><i class="fa-solid fa-shield-halved"></i> Ciberseguridad</span>
+        </div>
+
+
+
+
     </main>
     <footer class="footer">
         <p>
-            © 2026 · Juan Jesús González Hernández  ·
-            <a href="https://github.com/JJHernan-dev" target="_blank">GitHub</a>
+            © <span id="year"></span> Juan Jesús González Hernández
         </p>
+
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+
+        <div class="footer-links">
+            <a href="https://github.com/JJHernan-dev" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/TU-PERFIL" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
     </footer>
+
 </body>
 
 </html>
