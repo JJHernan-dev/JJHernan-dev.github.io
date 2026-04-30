@@ -1,146 +1,296 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Portfolio - Juan Jesús González Hernández</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio · Juan Jesús — Técnico IT</title>
+  <meta name="description" content="Portfolio de Técnico IT con formación en SMR, DAM y Ciberseguridad. Soporte, desarrollo Java/C# y seguridad de la información." />
+  <meta name="author" content="Juan Jesús" />
+
+  <meta property="og:title" content="Portfolio · Técnico IT" />
+  <meta property="og:description" content="Sistemas · Desarrollo · Ciberseguridad" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-    <header class="header">
-        <div class="background-shapes">
-    <span></span>
-    <span></span>
-    <span></span>
-</div>
-        <h1 class="hero-title">Juan Jesús González Hernández</h1>
-        <p>Desarrollador Backend Junior | Java · Spring Boot · APIs REST</p>
-        <div class="header-buttons">
-            <a class="cv-button" href="CV_JuanJesus_Gonzalez_Hernandez.pdf" target="_blank">
-                <i class="fa-solid fa-file-arrow-down"></i>
-                Descargar CV
-            </a>
 
-            <a class="contact-button" href="https://www.linkedin.com/in/juan-jes%C3%BAs-gonz%C3%A1lez-hern%C3%A1ndez-28116b3a8/" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-                Contacto
-            </a>
+<!-- NAV -->
+<header class="nav">
+  <div class="container nav__inner">
+    <a href="#top" class="nav__brand">
+      <span class="brand-mark">JJ</span>
+      <span class="brand-text">JJHernan<span class="accent">.dev</span></span>
+    </a>
+    <nav class="nav__links">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#skills">Skills</a>
+      <a href="#formacion">Formación</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto" class="nav__cta">Contacto</a>
+    </nav>
+    <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="top" class="hero">
+  <div class="hero__grid" aria-hidden="true"></div>
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="container hero__inner">
+    <p class="eyebrow">// JUAN JESÚS GONZÁLEZ HERNÁNDEZ</p>
+    <h1 class="hero__title">
+      Técnico IT.<br />
+      <span class="muted">Sistemas, desarrollo</span><br />
+      <span class="gradient-text">y ciberseguridad.</span>
+    </h1>
+    <p class="hero__lead">
+      riple formación en SMR, DAM y Ciberseguridad.
+      Construyo, administro y protejo sistemas con iniciativa y buenas prácticas.
+    </p>
+    <div class="hero__cta">
+      <a href="#proyectos" class="btn btn--primary">Ver proyectos →</a>
+      <a href="#contacto" class="btn btn--ghost">Contactar</a>
+    </div>
+    <div class="hero__chips">
+      <span>SMR</span><span>DAM</span><span>Ciberseguridad</span><span>Java · Spring Boot</span><span>C# · WPF</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="sobre-mi" class="section">
+  <div class="container grid-12">
+    <div class="col-4">
+      <p class="eyebrow">// 01 · Sobre mí</p>
+      <h2 class="section__title">Perfil<br/><span class="muted">polivalente.</span></h2>
+    </div>
+    <div class="col-8 prose">
+      <p>
+        Técnico IT con capacidad para asumir roles en
+        <strong>soporte técnico</strong>,
+        <strong>administración de sistemas</strong>,
+        <strong>desarrollo de software</strong> y
+        <strong>seguridad de la información</strong>.
+      </p>
+      <p>
+        Iniciativa propia demostrada en proyectos personales, trabajo en equipo
+        y autonomía en la resolución de problemas técnicos. Documento, refactorizo
+        y aplico buenas prácticas.
+      </p>
+      <p>
+        He desarrollado proyectos backend con Java y Spring Boot, así como aplicaciones de 
+        escritorio en C# (WPF), lo que me permite entender tanto el desarrollo como la 
+        infraestructura donde se ejecutan las aplicaciones.
+      </p>
+      <div class="stats">
+        <div><div class="stats__value">3</div><div class="stats__label">Titulaciones IT</div></div>
+        <div><div class="stats__value">720h</div><div class="stats__label">Ciberseguridad</div></div>
+        <div><div class="stats__value">2.000</div><div class="stats__label">Desarrollo de Aplicaciones Multiplataforma</div></div>
+        <div><div class="stats__value">2.000</div><div class="stats__label">Técnico en Sistemas Microinformáticos y Redes</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <div class="container">
+    <div class="section__head">
+      <p class="eyebrow">// 02 · Habilidades técnicas</p>
+      <h2 class="section__title">Stack & <span class="muted">conocimientos</span></h2>
+    </div>
+    <div class="skills-grid">
+      <article class="card">
+        <div class="card__icon">
+          <!-- server -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="6" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7h.01M7 17h.01"/></svg>
         </div>
-    </header>
-    <main>
-        <div class="sobremi">
-            <h1>Sobre mi</h1>
+        <h3>Sistemas & Redes</h3>
+        <ul>
+          <li>Administración Windows / Linux</li>
+          <li>Configuración de redes</li>
+          <li>Diagnóstico hardware/software</li>
+          <li>Soporte técnico N1 / N2</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
         </div>
-        <p>
-            <p>Desarrollador junior con formación en Desarrollo de Aplicaciones Multiplataforma (DAM) y en ciberseguridad, enfocado en el desarrollo backend con Java y Spring Boot.</p>
-            <p>Experiencia en el desarrollo de APIs REST y aplicaciones aplicando buenas prácticas como arquitectura en capas, código mantenible y control de versiones con Git.</p>
-            <p>Interés en el desarrollo de software backend y en la mejora continua de mis competencias técnicas.</p>
-        </p>
-
-        <h2>Proyectos</h2>
-        <p class="section-description">
-            Proyectos personales desarrollados para aplicar y reforzar mis conocimientos en
-            programación, buenas prácticas y seguridad.
-        </p>
-        <div class="projects">
-
-
-            <div class="card">
-                <h3>USER AUTH API - Java <i class="fa-brands fa-java project-icon2"></i></h3>
-                <p>
-                    API REST desarrollada con Spring Boot en Java para la gestión de usuarios, incluyendo registro, login y control de roles.
-                </p>
-                <a href="https://github.com/JJHernan-dev/user-auth-api" target="_blank">
-                    Ver en GitHub →
-                </a>
-            </div>
-
-            <div class="card">
-                <h3>Ticket Management API - Java <i class="fa-brands fa-java project-icon2"></i></h3>
-                <p>
-                    API REST desarrollada con Spring Boot, JPA y PostgreSQL, aplicando arquitectura en capas, validaciones y documentación con Swagger para la gestión de tickets de soporte.
-                </p>
-                <a href="https://github.com/JJHernan-dev/ticket-management-backend" target="_blank">
-                    Ver en GitHub →
-                </a>
-            </div>
-
-            <div class="card">
-                <h3>To Do List – Java <i class="fa-brands fa-java project-icon2"></i></h3>
-                <p>
-                    Aplicación de escritorio para gestionar tareas de manera sencilla y visual.
-                    Permite añadir, editar, eliminar y marcar tareas como completadas. Incluye persistencia de datos y
-                    una interfaz intuitiva.
-                </p>
-                <a href="https://github.com/JJHernan-dev/to-do-list-javafx" target="_blank">
-                    Ver en GitHub →
-                </a>
-            </div>
-
-            <div class="card">
-                <h3>Gestor de Contraseñas – C# WPF <i class="fa-solid fa-code project-icon"></i></h3>
-                <p>
-                    Aplicación de escritorio desarrollada con C# y WPF que implementa encriptación
-                    para el almacenamiento seguro de contraseñas.
-                </p>
-                <a href="https://github.com/JJHernan-dev/PasswordManager" target="_blank">
-                    Ver en GitHub →
-                </a>
-            </div>
+        <h3>Desarrollo</h3>
+        <ul>
+          <li>Java · Spring Boot</li>
+          <li>REST APIs · JPA / Hibernate</li>
+          <li>C# · WPF</li>
+          <li>SQL · PostgreSQL</li>
+          <li>Git · Clean Code</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-4Z"/></svg>
         </div>
-
-        <h2>Tecnologías</h2>
-        <p class="section-description">
-            Tecnologías con las que he trabajado durante mi formación y en proyectos personales,
-            así como otras que continúo aprendiendo.
-        </p>
-
-        <div class="tech">
-            <span><i class="fa-brands fa-java"></i> Java</span>
-            <span><i class="fa-solid fa-leaf"></i> Spring Boot</span>
-            <span><i class="fa-solid fa-server"></i> REST APIs</span>
-            <span><i class="fa-solid fa-database"></i> PostgreSQL</span>
-            <span><i class="fa-solid fa-database"></i> JPA / Hibernate</span>
-            <span><i class="fa-solid fa-box"></i> Maven</span>
-            <span><i class="fa-solid fa-book"></i> Swagger</span>
-            <span><i class="fa-solid fa-book"></i> OpenAPI</span>
-            <span><i class="fa-brands fa-git-alt"></i> Git / GitHub</span>
-
-            <span><i class="fa-solid fa-code"></i> C#</span>
-            <span><i class="fa-solid fa-desktop"></i> WPF</span>
-            <span><i class="fa-solid fa-database"></i> SQL</span>
-            <span><i class="fa-brands fa-html5"></i> HTML</span>
-            <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
-
-            <span class="learning"><i class="fa-brands fa-python"></i> Python</span>
-            <span class="learning"><i class="fa-solid fa-shield-halved"></i> Ciberseguridad</span>
+        <h3>Ciberseguridad</h3>
+        <ul>
+          <li>Seguridad en sistemas</li>
+          <li>Análisis de vulnerabilidades</li>
+          <li>Nessus Essentials · OpenVAS</li>
+          <li>RGPD</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-2.4 2.6-2.6Z"/></svg>
         </div>
+        <h3>Herramientas</h3>
+        <ul>
+          <li>Git · Maven</li>
+          <li>Swagger / OpenAPI</li>
+          <li>HTML · CSS</li>
+          <li>Testing básico</li>
+          <li>Control de versiones</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
 
-
-
-
-    </main>
-    <footer class="footer">
-        <p>
-            © <span id="year"></span> Juan Jesús González Hernández
-        </p>
-
-        <script>
-            document.getElementById("year").textContent = new Date().getFullYear();
-        </script>
-
-        <div class="footer-links">
-            <a href="https://github.com/JJHernan-dev" target="_blank">
-                <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/juan-jes%C3%BAs-gonz%C3%A1lez-hern%C3%A1ndez-28116b3a8/" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
+<!-- EDUCATION -->
+<section id="formacion" class="section">
+  <div class="container">
+    <div class="section__head">
+      <p class="eyebrow">// 03 · Formación</p>
+      <h2 class="section__title">Trayectoria <span class="muted">académica</span></h2>
+    </div>
+    <ol class="timeline">
+      <li>
+        <span class="timeline__year">2025</span>
+        <div class="timeline__card card">
+          <h3>Ciberseguridad en Entornos de las Tecnologías de la Información</h3>
+          <p class="timeline__meta">720 horas · Especialización</p>
+          <p class="timeline__detail">Seguridad en sistemas, análisis de vulnerabilidades, herramientas como Nessus y OpenVAS, RGPD.</p>
         </div>
-    </footer>
+      </li>
+      <li>
+        <span class="timeline__year">2024</span>
+        <div class="timeline__card card">
+          <h3>CFGS Desarrollo de Aplicaciones Multiplataforma (DAM)</h3>
+          <p class="timeline__meta">2.000 horas · Ciclo Formativo de Grado Superior</p>
+          <p class="timeline__detail">Java, Spring Boot, C#, WPF, bases de datos, arquitectura en capas y control de versiones.</p>
+        </div>
+      </li>
+      <li>
+        <span class="timeline__year">2016</span>
+        <div class="timeline__card card">
+          <h3>CFGM Técnico en Sistemas Microinformáticos y Redes (SMR)</h3>
+          <p class="timeline__meta">2.000 horas · Ciclo Formativo de Grado Medio</p>
+          <p class="timeline__detail">Administración de equipos, redes, soporte técnico y mantenimiento de sistemas.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
 
+<!-- PROJECTS -->
+<section id="proyectos" class="section">
+  <div class="container">
+    <div class="section__head">
+      <p class="eyebrow">// 04 · Proyectos</p>
+      <h2 class="section__title">Trabajos <span class="muted">destacados</span></h2>
+    </div>
+    <div class="projects">
+      <article class="card project">
+        <span class="project__code">01</span>
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 1 1 8 0v4"/></svg>
+        </div>
+        <h3>Gestor de Contraseñas Seguro</h3>
+        <p class="project__desc">Aplicación de escritorio con cifrado de datos, autenticación y protección de acceso. Diseño orientado a seguridad y buenas prácticas de protección de credenciales.</p>
+        <div class="tags">
+          <span>C#</span><span>WPF</span><span>.NET</span>
+        </div>
+        <ul class="bullets">
+          <li>Cifrado de datos</li>
+          <li>Autenticación</li>
+          <li>Buenas prácticas</li>
+        </ul>
+      </article>
+
+      <article class="card project">
+        <span class="project__code">02</span>
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 22 8.5 12 15 2 8.5 12 2"/><polyline points="2 15.5 12 22 22 15.5"/></svg>
+        </div>
+        <h3>Ticket Management API</h3>
+        <p class="project__desc">API REST con arquitectura en capas, JPA/Hibernate, PostgreSQL y documentación Swagger. Gestión de incidencias con validación de datos y manejo estructurado de errores.</p>
+        <div class="tags">
+          <span>Java</span><span>Spring Boot</span><span>PostgreSQL</span><span>Swagger</span>
+        </div>
+        <ul class="bullets">
+          <li>Arquitectura en capas</li>
+          <li>JPA / Hibernate</li>
+          <li>OpenAPI</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contacto" class="section section--contact">
+  <div class="container">
+    <div class="section__head center">
+      <p class="eyebrow">// 05 · Contacto</p>
+      <h2 class="section__title">¿Hablamos?</h2>
+      <p class="contact__lead">Puedes contactar conmigo a través de estas plataformas.</p>
+    </div>
+    <div class="contact-grid">
+      <a class="card contact-card" href="mailto:jjhernan.dev@gmail.com">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        </div>
+        <span class="contact__label">Email</span>
+        <span class="contact__value">jjhernan.dev@gmail.com</span>
+      </a>
+      <a class="card contact-card" href="https://github.com/JJHernan-dev" target="_blank" rel="noreferrer noopener">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5Z"/></svg>
+        </div>
+        <span class="contact__label">GitHub</span>
+        <span class="contact__value">github.com/JJHernan-dev</span>
+      </a>
+      <a class="card contact-card" href="https://www.linkedin.com/in/juanjesus-gh/" target="_blank" rel="noreferrer noopener">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.1c.5-1 1.9-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21h-4V9Z"/></svg>
+        </div>
+        <span class="contact__label">LinkedIn</span>
+        <span class="contact__value">linkedin.com/in/juanjesus-gh</span>
+      </a>
+      <a class="card contact-card" href="CV_JuanJesus_Gonzalez_Hernandez.pdf" target="_blank" download>
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M5 21h14"/></svg>
+        </div>
+        <span class="contact__label">Currículum</span>
+        <span class="contact__value">Descargar CV</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>© <span id="year"></span> Juan Jesús González Hernández· Técnico IT</p>
+    <p class="muted">Construido con HTML, CSS y JS · Tema oscuro tech minimalista</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
-
 </html>

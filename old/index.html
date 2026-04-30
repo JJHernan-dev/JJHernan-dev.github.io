@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - Juan Jesús González Hernández</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="background-shapes">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+        <h1 class="hero-title">Juan Jesús González Hernández</h1>
+        <p>Desarrollador Backend Junior | Java · Spring Boot · APIs REST</p>
+        <div class="header-buttons">
+            <a class="cv-button" href="CV_JuanJesus_Gonzalez_Hernandez.pdf" target="_blank">
+                <i class="fa-solid fa-file-arrow-down"></i>
+                Descargar CV
+            </a>
+
+            <a class="contact-button" href="https://www.linkedin.com/in/juan-jes%C3%BAs-gonz%C3%A1lez-hern%C3%A1ndez-28116b3a8/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+                Contacto
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="sobremi">
+            <h1>Sobre mi</h1>
+        </div>
+        <p>
+            <p>Desarrollador junior con formación en Desarrollo de Aplicaciones Multiplataforma (DAM) y en ciberseguridad, enfocado en el desarrollo backend con Java y Spring Boot.</p>
+            <p>Experiencia en el desarrollo de APIs REST y aplicaciones aplicando buenas prácticas como arquitectura en capas, código mantenible y control de versiones con Git.</p>
+            <p>Interés en el desarrollo de software backend y en la mejora continua de mis competencias técnicas.</p>
+        </p>
+
+        <h2>Proyectos</h2>
+        <p class="section-description">
+            Proyectos personales desarrollados para aplicar y reforzar mis conocimientos en
+            programación, buenas prácticas y seguridad.
+        </p>
+        <div class="projects">
+
+
+            <div class="card">
+                <h3>USER AUTH API - Java <i class="fa-brands fa-java project-icon2"></i></h3>
+                <p>
+                    API REST desarrollada con Spring Boot en Java para la gestión de usuarios, incluyendo registro, login y control de roles.
+                </p>
+                <a href="https://github.com/JJHernan-dev/user-auth-api" target="_blank">
+                    Ver en GitHub →
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>Ticket Management API - Java <i class="fa-brands fa-java project-icon2"></i></h3>
+                <p>
+                    API REST desarrollada con Spring Boot, JPA y PostgreSQL, aplicando arquitectura en capas, validaciones y documentación con Swagger para la gestión de tickets de soporte.
+                </p>
+                <a href="https://github.com/JJHernan-dev/ticket-management-backend" target="_blank">
+                    Ver en GitHub →
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>To Do List – Java <i class="fa-brands fa-java project-icon2"></i></h3>
+                <p>
+                    Aplicación de escritorio para gestionar tareas de manera sencilla y visual.
+                    Permite añadir, editar, eliminar y marcar tareas como completadas. Incluye persistencia de datos y
+                    una interfaz intuitiva.
+                </p>
+                <a href="https://github.com/JJHernan-dev/to-do-list-javafx" target="_blank">
+                    Ver en GitHub →
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>Gestor de Contraseñas – C# WPF <i class="fa-solid fa-code project-icon"></i></h3>
+                <p>
+                    Aplicación de escritorio desarrollada con C# y WPF que implementa encriptación
+                    para el almacenamiento seguro de contraseñas.
+                </p>
+                <a href="https://github.com/JJHernan-dev/PasswordManager" target="_blank">
+                    Ver en GitHub →
+                </a>
+            </div>
+        </div>
+
+        <h2>Tecnologías</h2>
+        <p class="section-description">
+            Tecnologías con las que he trabajado durante mi formación y en proyectos personales,
+            así como otras que continúo aprendiendo.
+        </p>
+
+        <div class="tech">
+            <span><i class="fa-brands fa-java"></i> Java</span>
+            <span><i class="fa-solid fa-leaf"></i> Spring Boot</span>
+            <span><i class="fa-solid fa-server"></i> REST APIs</span>
+            <span><i class="fa-solid fa-database"></i> PostgreSQL</span>
+            <span><i class="fa-solid fa-database"></i> JPA / Hibernate</span>
+            <span><i class="fa-solid fa-box"></i> Maven</span>
+            <span><i class="fa-solid fa-book"></i> Swagger</span>
+            <span><i class="fa-solid fa-book"></i> OpenAPI</span>
+            <span><i class="fa-brands fa-git-alt"></i> Git / GitHub</span>
+
+            <span><i class="fa-solid fa-code"></i> C#</span>
+            <span><i class="fa-solid fa-desktop"></i> WPF</span>
+            <span><i class="fa-solid fa-database"></i> SQL</span>
+            <span><i class="fa-brands fa-html5"></i> HTML</span>
+            <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+
+            <span class="learning"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="learning"><i class="fa-solid fa-shield-halved"></i> Ciberseguridad</span>
+        </div>
+
+
+
+
+    </main>
+    <footer class="footer">
+        <p>
+            © <span id="year"></span> Juan Jesús González Hernández
+        </p>
+
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+
+        <div class="footer-links">
+            <a href="https://github.com/JJHernan-dev" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/juan-jes%C3%BAs-gonz%C3%A1lez-hern%C3%A1ndez-28116b3a8/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
