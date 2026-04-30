@@ -11,7 +11,7 @@ El objetivo de crear este portfolio es el de mostrar mi formación académica, m
 
 ##  Enlace al portfolio
 
-https://jjhernan-dev.github.io/
+<a href="https://jjhernan-dev.github.io/" target="_blank">jjhernan-dev.github.io</a>
 
 ##  Tecnologías usadas
 
@@ -31,9 +31,9 @@ Segunda versión del portfolio, más moderno y trabajado.
 
 #### Versión v1
 
-Primera versión del portfolio, simple y muy visual.
+Primera versión del portfolio, simple y muy visual (desactualizado).
 
-Se puede visitar aún desde https://jjhernan-dev.github.io/old
+Se puede visitar aún desde <a href="https://jjhernan-dev.github.io/old" target="_blank">jjhernan-dev.github.io/old</a>
 
 <img width="347"  alt="1" src="img/v1.PNG" />
 
