@@ -249,9 +249,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   background: var(--bg-elev); border: 1px solid var(--border);
   color: var(--muted);
 }
-.bullets { padding-top: 18px; border-top: 1px solid var(--border); }
-.bullets li { font-size: 12px; color: var(--muted); padding: 3px 0; display: flex; align-items: center; gap: 8px; }
-.bullets li::before { content: ""; width: 4px; height: 4px; border-radius: 50%; background: var(--primary); display: inline-block; }
 
 /* Contact */
 .section--contact { padding-bottom: 80px; }
