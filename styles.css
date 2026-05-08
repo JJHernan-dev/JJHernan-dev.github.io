@@ -250,6 +250,12 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   color: var(--muted);
 }
 
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 /* Contact */
 .section--contact { padding-bottom: 80px; }
 .contact-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; max-width: 1200px; margin: 0 auto; }
