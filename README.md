@@ -31,7 +31,7 @@ El portfolio ha ido evolucionando con el tiempo conforme he continuado ampliando
 
 Tercera versión del portfolio. Rediseño completo centrado en ofrecer una experiencia más moderna, profesional y coherente con mi trayectoria actual. Incluye una mejor organización del contenido, nuevas secciones dedicadas a formación, certificaciones y proyectos, así como un diseño más cuidado y responsive.
 
-Pueds visitar mi portfolio desde: <a href="https://jjhernan-dev.github.io" target="_blank">jjhernan-dev.github.io/old</a>
+Pueds visitar mi portfolio desde: <a href="https://jjhernan-dev.github.io" target="_blank">https://jjhernan-dev.github.io</a>
 
 <img width="347"  alt="1" src="img/v3.PNG" />
 
@@ -39,7 +39,7 @@ Pueds visitar mi portfolio desde: <a href="https://jjhernan-dev.github.io" targe
 
 Segunda versión del portfolio, con importantes mejoras visuales respecto a la versión inicial y una estructura más trabajada para la presentación de proyectos y tecnologías.
 
-Todavía puede visitarse desde: <a href="https://jjhernan-dev.github.io/ver/v2" target="_blank">jjhernan-dev.github.io/old</a>
+Todavía puede visitarse desde: <a href="https://jjhernan-dev.github.io/ver/v2" target="_blank">https://jjhernan-dev.github.io/ver/v2</a>
 
 <img width="347"  alt="1" src="img/v2.PNG" />
 
@@ -47,7 +47,7 @@ Todavía puede visitarse desde: <a href="https://jjhernan-dev.github.io/ver/v2" 
 
 Primera versión del portfolio. Un diseño más simple y visual que marcó el punto de partida del proyecto.
 
-Todavía puede visitarse desde: <a href="https://jjhernan-dev.github.io/ver/v1" target="_blank">jjhernan-dev.github.io/old</a>
+Todavía puede visitarse desde: <a href="https://jjhernan-dev.github.io/ver/v1" target="_blank">https://jjhernan-dev.github.io/ver/v1</a>
 
 <img width="347"  alt="1" src="img/v1.PNG" />
 
