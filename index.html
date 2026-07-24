@@ -1,549 +1,459 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio · Juan Jesús — Técnico IT</title>
-  <meta name="description"
-    content="Portfolio de Técnico IT con formación en SMR, DAM y Ciberseguridad. Soporte, desarrollo Java/C# y seguridad de la información." />
-  <meta name="author" content="Juan Jesús" />
-
-  <meta property="og:title" content="Portfolio · Técnico IT" />
-  <meta property="og:description" content="Sistemas · Desarrollo · Ciberseguridad" />
-  <meta property="og:type" content="website" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-    rel="stylesheet" />
-
+  <meta name="description" content="Portfolio profesional de Juan Jesús Hernández — Técnico IT especializado en Sistemas, Desarrollo Backend y Ciberseguridad Defensiva." />
+  <title>Juan Jesús Hernández — Técnico IT | Sistemas y Ciberseguridad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-
 <body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
 
-  <!-- NAV -->
-  <header class="nav">
-    <div class="container nav__inner">
-      <a href="#top" class="nav__brand">
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#inicio" class="brand">
         <span class="brand-mark">JJ</span>
-        <span class="brand-text">JJHernan<span class="accent">.dev</span></span>
+        <span class="brand-text">Juan Jesús <span class="muted">/ IT</span></span>
       </a>
-      <nav class="nav__links">
+      <nav class="nav-links" id="navLinks">
+        <a href="#inicio">Inicio</a>
         <a href="#sobre-mi">Sobre mí</a>
-        <a href="#skills">Skills</a>
         <a href="#formacion">Formación</a>
-        <a href="#experiencia">Experiencia</a>
+        <a href="#habilidades">Habilidades</a>
         <a href="#proyectos">Proyectos</a>
-        <a href="#contacto" class="nav__cta">Contacto</a>
+        <a href="#contacto">Contacto</a>
       </nav>
-      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section id="top" class="hero">
-    <div class="hero__grid" aria-hidden="true"></div>
-    <div class="hero__glow" aria-hidden="true"></div>
-    <div class="container hero__inner">
-      <p class="eyebrow">// JUAN JESÚS GONZÁLEZ HERNÁNDEZ</p>
-      <h1 class="hero__title">
-        Backend Developer.<br />
-        <span class="muted">Técnico IT / Sistemas</span><br />
-        <span class="gradient-text">y ciberseguridad.</span>
-      </h1>
-      <p class="hero__lead">
-        Trabajo en la intersección entre sistemas, desarrollo y ciberseguridad. Construyo, administro y protejo
-        aplicaciones con enfoque práctico y buenas prácticas.
-      </p>
-      <div class="hero__cta">
-        <a href="#proyectos" class="btn btn--primary">Ver proyectos →</a>
-        <a href="#contacto" class="btn btn--ghost">Contactar</a>
-      </div>
-      <div class="hero__chips">
-        <span>SMR</span><span>DAM</span><span>Ciberseguridad</span><span>Java · Spring Boot</span><span>C# · WPF</span>
-      </div>
-    </div>
-  </section>
+  <main>
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <span class="chip">
+            <span class="chip-dot"></span> Disponible para nuevas oportunidades
+          </span>
+<h1>
+    <span class="hero-name">Juan Jesús</span>
+    <span class="hero-surname accent">González Hernández</span>
+</h1>
+          <h2 class="hero-role">Técnico IT <span class="sep">|</span> Sistemas y Ciberseguridad</h2>
+          <p class="hero-sub mono">
+            Linux <span class="dot">•</span> Redes <span class="dot">•</span> Seguridad Defensiva <span class="dot">•</span> Desarrollo Backend
+          </p>
+          <p class="hero-desc">
+            Mi interés profesional se encuentra en la intersección entre sistemas, desarrollo y ciberseguridad. Me gusta comprender cómo funcionan las tecnologías desde diferentes perspectivas y continuar aprendiendo mediante la construcción de proyectos prácticos.
+          <p class="hero-desc">
+            Mi objetivo es continuar creciendo como profesional IT mediante el aprendizaje continuo y el desarrollo de proyectos prácticos relacionados con sistemas, desarrollo backend y seguridad defensiva.
+          </p>
+          <div class="hero-cta">
+            <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+            <a href="#contacto" class="btn btn-ghost">Contactar</a>
+          </div>
+        </div>
 
-  <!-- ABOUT -->
-  <section id="sobre-mi" class="section">
-    <div class="container grid-12">
-      <div class="col-4">
-        <p class="eyebrow">// 01 · Sobre mí</p>
-        <h2 class="section__title">Mi enfoque<br /></h2>
-      </div>
-      <div class="col-8 prose">
-        <p>
-          Trabajo con una visión global del entorno tecnológico: desde la infraestructura hasta el código y la
-          seguridad.
-          Me interesa entender no solo cómo funciona una aplicación, sino también dónde se ejecuta, cómo se comunica y
-          cómo se protege.
-        </p>
-        <p>
-          En mis proyectos aplico buenas prácticas desde el inicio: estructura clara, validación de datos, manejo de
-          errores y documentación. Trabajo con una mentalidad de mejora continua, documentando, refactorizando y
-          cuidando la calidad del código a medida que evolucionan las soluciones.
-          Suelo construir APIs con Java y Spring Boot y aplicaciones de escritorio en C#, lo que me permite moverme con
-          soltura entre backend y entorno de ejecución.
-        </p>
-        <p>
-          Aprendo construyendo. Por eso desarrollo proyectos propios donde pongo en práctica conceptos de sistemas,
-          desarrollo y ciberseguridad en conjunto.
-        </p>
-        <div class="stats">
-          <div>
-            <div class="stats__value">3</div>
-            <div class="stats__label">Titulaciones IT</div>
-          </div>
-          <div>
-            <div class="stats__value">720h</div>
-            <div class="stats__label">Ciberseguridad</div>
-          </div>
-          <div>
-            <div class="stats__value">2.000h</div>
-            <div class="stats__label">Desarrollo de Aplicaciones Multiplataforma</div>
-          </div>
-          <div>
-            <div class="stats__value">2.000h</div>
-            <div class="stats__label">Técnico en Sistemas Microinformáticos y Redes</div>
+        <div class="hero-photo reveal">
+          <div class="photo-frame">
+            <img src="img/foto.png" alt="Juan Jesús Hernández" onerror="this.style.display='none'; this.parentElement.classList.add('empty');" />
+            <div class="photo-placeholder">
+              <small>profile.jpg</small>
+            </div>
+            <div class="photo-ring"></div>
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- STATS BAND -->
+    <section class="stats-band" aria-label="Resumen">
+      <div class="container stats-inner">
+        <div class="stat reveal">
+          <div class="stat-value">4.700<span class="stat-plus">+</span></div>
+          <div class="stat-label mono">horas de formación técnica</div>
+          <div class="stat-sub muted">SMR · DAM · Ciberseguridad · Google</div>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat reveal">
+          <div class="stat-value">6</div>
+          <div class="stat-label mono">proyectos personales publicados</div>
+          <div class="stat-sub muted">Backend · Blue Team · Desktop</div>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat reveal">
+          <div class="stat-value stat-value-sm">Aprendizaje continuo</div>
+          <div class="stat-label mono">y desarrollo práctico</div>
+          <div class="stat-sub muted">Curiosidad · Compromiso · Constancia</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">01</span>
+          <h3>Sobre mí</h3>
+          <div class="section-line"></div>
+        </div>
+        <div class="about reveal">
+          <p>
+            Considero la tecnología como un proceso de aprendizaje continuo. Me gusta aprender de forma práctica, construyendo proyectos personales que me permitan comprender cómo funcionan las tecnologías desde diferentes perspectivas y consolidar conocimientos técnicos.          </p>
+          <p>
+            Actualmente continúo ampliando mi formación en áreas como los sistemas, el desarrollo de software y la ciberseguridad mediante certificaciones, laboratorios personales y proyectos orientados a la seguridad defensiva y las buenas prácticas tecnológicas.          </p>
+          <p>
+            Mi objetivo profesional es seguir creciendo dentro del sector IT, manteniendo una actitud de aprendizaje constante y desarrollando soluciones que me permitan continuar mejorando tanto a nivel técnico como profesional.          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICACIONES -->
+<section id="certificaciones" class="section">
+  <div class="container">
+
+    <div class="section-head reveal">
+      <span class="section-num">02</span>
+      <h3>Certificaciones</h3>
+      <div class="section-line"></div>
     </div>
-  </section>
 
-  <!-- SKILLS -->
-  <section id="skills" class="section">
-    <div class="container">
-      <div class="section__head">
-        <p class="eyebrow">// 02 · Habilidades técnicas</p>
-        <h2 class="section__title">Stack & <span class="muted">conocimientos</span></h2>
-      </div>
-      <div class="skills-grid">
-        <article class="card">
-          <div class="card__icon">
-            <!-- server -->
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <rect x="3" y="4" width="18" height="6" rx="2" />
-              <rect x="3" y="14" width="18" height="6" rx="2" />
-              <path d="M7 7h.01M7 17h.01" />
-            </svg>
-          </div>
-          <h3>Sistemas & Redes</h3>
-          <ul>
-            <li>Administración Windows / Linux</li>
-            <li>Configuración de redes</li>
-            <li>Diagnóstico hardware/software</li>
-            <li>Soporte técnico N1 / N2</li>
-          </ul>
-        </article>
-        <article class="card">
-          <div class="card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <polyline points="16 18 22 12 16 6" />
-              <polyline points="8 6 2 12 8 18" />
-            </svg>
-          </div>
-          <h3>Desarrollo</h3>
-          <ul>
-            <li>Java · Spring Boot</li>
-            <li>APIs REST · JPA / Hibernate</li>
-            <li>SQL · PostgreSQL</li>
-            <li>C# · WPF</li>
-            <li>SQL · PostgreSQL</li>
-          </ul>
-        </article>
-        <article class="card">
-          <div class="card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-4Z" />
-            </svg>
-          </div>
-          <h3>Ciberseguridad</h3>
-          <ul>
-            <li>Seguridad en sistemas</li>
-            <li>Análisis de vulnerabilidades</li>
-            <li>Nessus Essentials · OpenVAS</li>
-            <li>RGPD</li>
-          </ul>
-        </article>
-        <article class="card">
-          <div class="card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-2.4 2.6-2.6Z" />
-            </svg>
-          </div>
-          <h3>Herramientas</h3>
-          <ul>
-            <li>Git (control de versiones)</li>
-            <li>Maven</li>
-            <li>Swagger / OpenAPI</li>
-            <li>HTML · CSS</li>
-            <li>Buenas prácticas de código y testing</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
+    <article class="cert-card reveal">
 
-  <!-- EDUCATION -->
-  <section id="formacion" class="section">
-    <div class="container">
-      <div class="section__head">
-        <p class="eyebrow">// 03 · Formación</p>
-        <h2 class="section__title">Trayectoria <span class="muted">académica</span></h2>
-      </div>
-      <ol class="timeline">
-        <li>
-          <span class="timeline__year">2025</span>
-          <div class="timeline__card card">
-            <h3>Ciberseguridad en Entornos de las Tecnologías de la Información</h3>
-            <p class="timeline__meta">720 horas · Especialización</p>
-            <p class="timeline__detail">Seguridad en sistemas, análisis de vulnerabilidades, herramientas como Nessus y
-              OpenVAS, RGPD.</p>
-          </div>
-        </li>
-        <li>
-          <span class="timeline__year">2024</span>
-          <div class="timeline__card card">
-            <h3>CFGS Desarrollo de Aplicaciones Multiplataforma (DAM)</h3>
-            <p class="timeline__meta">2.000 horas · Ciclo Formativo de Grado Superior</p>
-            <p class="timeline__detail">Java, Spring Boot, C#, WPF, bases de datos, arquitectura en capas y control de
-              versiones.</p>
-          </div>
-        </li>
-        <li>
-          <span class="timeline__year">2016</span>
-          <div class="timeline__card card">
-            <h3>CFGM Técnico en Sistemas Microinformáticos y Redes (SMR)</h3>
-            <p class="timeline__meta">2.000 horas · Ciclo Formativo de Grado Medio</p>
-            <p class="timeline__detail">Administración de equipos, redes, soporte técnico y mantenimiento de sistemas.
-            </p>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </section>
+      <!-- IZQUIERDA -->
+      <div class="cert-left">
 
-  <!-- EXPERIENCE -->
-  <section id="experiencia" class="section">
-    <div class="container">
-      <div class="section__head">
-        <p class="eyebrow">// 04 · Experiencia</p>
-        <h2 class="section__title">Experiencia <span class="muted">profesional</span></h2>
-      </div>
-      <ol class="timeline">
-        <li>
-          <span class="timeline__year">2024</span>
-          <div class="timeline__card card">
-            <h3>Técnico de Software</h3>
-            <p class="timeline__meta">Avanzate · España · Mar 2024 – Jun 2024</p>
-            <p class="timeline__detail">Desarrollo y mantenimiento de aplicaciones con Delphi y SQL en entorno
-              profesional. Buenas prácticas de programación orientada a objetos y control de versiones en equipo.</p>
-          </div>
-        </li>
-        <li>
-          <span class="timeline__year">2016</span>
-          <div class="timeline__card card">
-            <h3>Técnico en Sistemas y Redes</h3>
-            <p class="timeline__meta">PCBox · España · Mar 2016 – Jun 2016</p>
-            <p class="timeline__detail">Soporte técnico y resolución de incidencias de hardware y software a clientes.
-              Instalación y configuración de sistemas operativos, redes y periféricos.</p>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </section>
+        <div class="cert-badge">
+          <img src="img/badgeCiberseguridad.png"
+               alt="Badge Certificado de Ciberseguridad de Google"
+               onerror="this.style.display='none'; this.parentElement.classList.add('empty');" />
+        </div>
 
-  <!-- PROJECTS -->
-  <section id="proyectos" class="section">
-    <div class="container">
-      <div class="section__head">
-        <p class="eyebrow">// 05 · Proyectos</p>
-        <h2 class="section__title">Trabajos <span class="muted">destacados</span></h2>
-      </div>
-
-      <div class="projects">
-
-        <a href="https://jjhernan-dev.github.io/projects/mithrandir-sentinel/" target="_blank" class="project-link">
-          <article class="card project">
-
-            <span class="project__code">01</span>
-
-            <div class="card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M12 2l8 4v6c0 5-3.5 9.5-8 10-4.5-.5-8-5-8-10V6l8-4z" />
-                <path d="M9 12l2 2 4-4" />
-              </svg>
-            </div>
-
-            <h3>Mithrandir Sentinel</h3>
-
-            <p class="project__desc">
-              Herramienta de monitorización defensiva desarrollada en C# WPF con arquitectura MVVM. Monitorización TCP
-              en tiempo real, alertas dinámicas e interfaz moderna inspirada en entornos SOC.
-            </p>
-
-<div class="tags">
-  <span>C#</span>
-  <span>WPF</span>
-  <span>MVVM</span>
-  <span>Cybersecurity</span>
-</div>
-
-<ul>
-  <li>Monitorización defensiva en tiempo real</li>
-  <li>Sistema de alertas dinámicas</li>
-  <li>Arquitectura moderna de escritorio</li>
-</ul>
-
-          </article>
+        <a class="btn btn-outline"
+           href="https://www.coursera.org/account/accomplishments/specialization/G2H6KWW2H32B"
+           target="_blank"
+           rel="noopener">
+          Ver certificado →
         </a>
 
+      </div>
 
-        <a href="https://github.com/JJHernan-dev/ticket-management-backend" target="_blank" class="project-link">
+      <!-- DERECHA -->
+      <div class="cert-body">
 
-          <article class="card project">
-            <span class="project__code">02</span>
-            <div class="card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <polygon points="12 2 22 8.5 12 15 2 8.5 12 2" />
-                <polyline points="2 15.5 12 22 22 15.5" />
-              </svg>
+        <div class="timeline-meta">
+          <span class="timeline-year mono">
+            Google · Coursera
+          </span>
+
+          <span class="timeline-hours mono">
+            23 de julio de 2026
+          </span>
+        </div>
+
+        <h4>Certificado Profesional de Ciberseguridad de Google</h4>
+
+        <p>
+          Certificación profesional orientada a la ciberseguridad defensiva, con formación en gestión de riesgos, seguridad de redes, análisis de vulnerabilidades, monitorización, detección y respuesta ante incidentes, así como el uso de herramientas y metodologías fundamentales del entorno Blue Team.
+        </p>
+
+        <div class="tags">
+          <span>Gestión de riesgos</span>
+          <span>Seguridad de redes</span>
+          <span>Vulnerability Management</span>
+          <span>SIEM</span>
+          <span>IDS/IPS</span>
+          <span>Blue Team</span>
+        </div>
+
+      </div>
+
+    </article>
+
+  </div>
+</section>
+
+    <!-- FORMACIÓN (timeline vertical) -->
+    <section id="formacion" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">03</span>
+          <h3>Experiencia profesional</h3>
+          <div class="section-line"></div>
+        </div>
+
+        <ol class="timeline reveal">
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-year mono">2024</span>
+                <span class="timeline-hours mono">Avanzate · España · Mar 2024 – Jun 2024</span>
+              </div>
+              <h4>Técnico de Software </h4>
+              <p class="muted">Especialización orientada a la ciberseguridad aplicada a entornos TI, abordando aspectos relacionados con la gestión de vulnerabilidades, el hardening de sistemas, la seguridad en redes y la respuesta ante incidentes.</p>
             </div>
-            <h3>Ticket Management API</h3>
-            <p class="project__desc">API REST con arquitectura en capas, JPA/Hibernate, PostgreSQL y documentación
-              Swagger. Gestión de incidencias con validación de datos y manejo estructurado de errores.</p>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-year mono">2016</span>
+                <span class="timeline-hours mono">PCBox · España · Mar 2016 – Jun 2016</span>
+              </div>
+              <h4>Técnico en Sistemas y Redes</h4>
+              <p class="muted">Soporte técnico y resolución de incidencias de hardware y software a clientes. Instalación y configuración de sistemas operativos, redes y periféricos.</p>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+        <!-- FORMACIÓN (timeline vertical) -->
+    <section id="formacion" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">04</span>
+          <h3>Formación académica</h3>
+          <div class="section-line"></div>
+        </div>
+
+        <ol class="timeline reveal">
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-year mono">2025</span>
+                <span class="timeline-hours mono">720 h</span>
+              </div>
+              <h4>Ciberseguridad en Entornos de las Tecnologías de la Información</h4>
+              <p class="muted">Especialización orientada a la ciberseguridad aplicada a entornos TI, abordando aspectos relacionados con la gestión de vulnerabilidades, el hardening de sistemas, la seguridad en redes y la respuesta ante incidentes.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-year mono">2024</span>
+                <span class="timeline-hours mono">2.000 h</span>
+              </div>
+              <h4>CFGS Desarrollo de Aplicaciones Multiplataforma (DAM)</h4>
+              <p class="muted">Formación centrada en el desarrollo de software, bases de datos y aplicaciones multiplataforma, proporcionando una sólida base en desarrollo backend y diseño de soluciones tecnológicas.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-year mono">2016</span>
+                <span class="timeline-hours mono">2.000 h</span>
+              </div>
+              <h4>CFGM Técnico en Sistemas Microinformáticos y Redes (SMR)</h4>
+              <p class="muted">Formación orientada a los fundamentos de los sistemas informáticos, redes y soporte técnico, que constituye la base de mi recorrido profesional dentro del sector IT.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+    
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">05</span>
+          <h3>Habilidades técnicas</h3>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="skill-card reveal">
+            <h4><i data-lucide="server"></i>
+Sistemas</h4>
             <div class="tags">
-              <span>Java</span><span>Spring Boot</span><span>PostgreSQL</span><span>Swagger</span>
+              <span>Windows</span><span>Linux</span><span>Redes TCP/IP</span>
+              <span>Soporte Técnico N1/N2</span><span>Administración de sistemas</span>
+              <span>VMware</span><span>VirtualBox</span>
             </div>
-            <ul>
-              <li>Arquitectura en capas</li>
-              <li>JPA / Hibernate</li>
-              <li>OpenAPI</li>
-            </ul>
-          </article>
-        </a>
+          </div>
 
-
-        <a href="https://github.com/JJHernan-dev/owasp-security-lab" target="_blank" class="project-link">
-          <article class="card project">
-
-            <span class="project__code">01</span>
-
-            <div class="card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M12 2l8 4v6c0 5-3.5 9.5-8 10-4.5-.5-8-5-8-10V6l8-4z" />
-                <path d="M9 12l2 2 4-4" />
-              </svg>
-            </div>
-
-            <h3>OWASP Security Lab</h3>
-
-            <p class="project__desc">
-              Laboratorio práctico de ciberseguridad donde se exploran y mitigan vulnerabilidades reales basadas en
-              OWASP Top 10 como SQL Injection y XSS.
-            </p>
-
+          <div class="skill-card reveal">
+            <h4><i data-lucide="code-xml"></i>Desarrollo Backend</h4>
             <div class="tags">
-              <span>Python</span>
-              <span>Flask</span>
-              <span>Docker</span>
-              <span>OWASP</span>
-            </div>
+              <span>Java</span><span>Spring Boot</span><span>REST APIs</span>
+              <span>Bases de datos SQL</span><span>C#</span>
+              <span>Aplicaciones Desktop (WPF)</span><span>Maven</span>
+              </div>
+          </div>
 
-            <ul>
-              <li>SQL Injection y mitigación</li>
-              <li>XSS (Cross-Site Scripting)</li>
-              <li>Dockerizado</li>
-            </ul>
-
-          </article>
-        </a>
-
-        
-        <a href="https://github.com/JJHernan-dev/PasswordManager" target="_blank" class="project-link">
-
-          <article class="card project">
-            <span class="project__code">01</span>
-
-            <div class="card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <rect x="4" y="11" width="16" height="10" rx="2" />
-                <path d="M8 11V7a4 4 0 1 1 8 0v4" />
-              </svg>
-            </div>
-
-            <h3>Gestor de Contraseñas Seguro</h3>
-
-            <p class="project__desc">
-              Aplicación de escritorio orientada a la gestión segura de credenciales, con cifrado de datos y control de
-              acceso.
-            </p>
-
+          <div class="skill-card reveal">
+            <h4><i data-lucide="shield"></i>Ciberseguridad</h4>
             <div class="tags">
-              <span>C#</span>
-              <span>WPF</span>
-              <span>.NET</span>
-              <span>Security</span>
+              <span>Gestión de vulnerabilidades</span><span>Seguridad en redes</span>
+              <span>Detección y respuesta a incidentes</span><span>Hardening de sistemas</span>
+              <span>Análisis de vulnerabilidades</span><span>Nessus Essentials</span><span>OpenVAS</span>
             </div>
+          </div>
 
-            <ul>
-              <li>Cifrado de credenciales</li>
-              <li>Autenticación de usuario</li>
-              <li>Protección de datos locales</li>
-            </ul>
+          <div class="skill-card reveal">
+            <h4><i data-lucide="wrench"></i>
+Herramientas y Tecnologías</h4>
+            <div class="tags">
+              <span>Git</span><span>GitHub</span><span>Docker</span>
+              <span>Swagger / OpenAPI</span><span>Postman</span><span>Linux CLI</span>
+              <span>Bash</span><span>VS Code</span><span>VMware</span><span>VirtualBox</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">06</span>
+          <h3>Proyectos</h3>
+          <div class="section-line"></div>
+        </div>
+
+        <article class="project-featured reveal">
+          <div class="featured-badge">
+            <span class="pulse-dot"></span> Laboratorio Principal · En desarrollo
+          </div>
+          <h4>Blue-Team-HomeLab</h4>
+          <p>
+            Laboratorio personal orientado a la <strong>seguridad defensiva</strong> y al aprendizaje continuo, diseñado para poner en práctica conocimientos relacionados con sistemas, redes y ciberseguridad mediante escenarios inspirados en entornos empresariales. 
+          </p>
+          <p class="muted">
+            Incluirá documentación técnica, escenarios prácticos y laboratorios sobre hardening, análisis de vulnerabilidades, virtualización, monitorización, Linux, redes y respuesta ante incidentes. El objetivo del laboratorio es continuar aprendiendo mediante la construcción de escenarios prácticos que permitan comprender cómo proteger, administrar y monitorizar infraestructuras y servicios desde una perspectiva defensiva.
+          </p>
+          <div class="tags">
+            <span>Linux</span><span>Docker</span><span>VMware</span><span>Redes</span>
+            <span>Blue Team</span><span>Hardening</span><span>Vulnerability Management</span>
+            <span>Incident Response</span><span>Monitoring</span><span>Bash</span><span>GitHub Pages</span>
+          </div>
+          <div class="project-actions">
+            <span class="btn btn-soon" aria-disabled="true">Próximamente...</span>
+          </div>
+        </article>
+
+        <div class="grid grid-2 projects-grid">
+          <article class="project-card reveal">
+            <h4>Mithrandir Sentinel</h4>
+            <p>Herramienta defensiva en C# WPF para monitorización de conexiones TCP, detección de actividad sospechosa y visualización en tiempo real.</p>
+            <div class="tags">
+              <span>C#</span><span>WPF</span><span>MVVM</span><span>.NET</span><span>TCP Monitoring</span>
+            </div>
+            <a class="btn btn-outline" href="https://jjhernan-dev.github.io/projects/mithrandir-sentinel/" target="_blank" rel="noopener">GitHub →</a>
           </article>
 
-        </a>
+          <article class="project-card reveal">
+            <h4>OWASP Security Lab</h4>
+            <p>Laboratorio vulnerable construido con Docker y Flask con ejemplos prácticos de SQL Injection y XSS.</p>
+            <div class="tags">
+              <span>Docker</span><span>Python</span><span>Flask</span><span>SQL Injection</span><span>XSS</span>
+            </div>
+            <a class="btn btn-outline" href="https://github.com/JJHernan-dev/owasp-security-lab" target="_blank" rel="noopener">GitHub →</a>
+          </article>
 
-<a href="https://github.com/JJHernan-dev/user-auth-api" target="_blank" class="project-link">
+          <article class="project-card reveal">
+            <h4>User Auth API</h4>
+            <p>API REST con Java y Spring Boot para la gestión segura de usuarios y autenticación.</p>
+            <div class="tags">
+              <span>Java</span><span>Spring Boot</span><span>PostgreSQL</span><span>REST API</span>
+            </div>
+            <a class="btn btn-outline" href="https://github.com/JJHernan-dev/user-auth-api" target="_blank" rel="noopener">GitHub →</a>
+          </article>
 
-  <article class="card project">
-    <span class="project__code">03</span>
+          <article class="project-card reveal">
+            <h4>Ticket Management API</h4>
+            <p>Sistema de gestión de tickets desarrollado con Java y Spring Boot.</p>
+            <div class="tags">
+              <span>Java</span><span>Spring Boot</span><span>JPA</span><span>PostgreSQL</span>
+            </div>
+            <a class="btn btn-outline" href="https://github.com/JJHernan-dev/ticket-management-backend" target="_blank" rel="noopener">GitHub →</a>
+          </article>
 
-    <div class="card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <polygon points="12 2 22 8.5 12 15 2 8.5 12 2" />
-                <polyline points="2 15.5 12 22 22 15.5" />
-              </svg>
-    </div>
+          <article class="project-card reveal">
+            <h4>Password Manager</h4>
+            <p>Gestor de contraseñas de escritorio desarrollado en C# y WPF.</p>
+            <div class="tags">
+              <span>C#</span><span>WPF</span><span>.NET</span>
+            </div>
+            <a class="btn btn-outline" href="https://github.com/JJHernan-dev/PasswordManager" target="_blank" rel="noopener">GitHub →</a>
+          </article>
 
-    <h3>User Auth API</h3>
-
-    <p class="project__desc">
-      API REST segura desarrollada con Spring Boot y Spring Security.
-      Implementa autenticación JWT, control de roles y cifrado de
-      contraseñas con BCrypt siguiendo buenas prácticas backend.
-    </p>
-
-    <div class="tags">
-      <span>Java</span>
-      <span>Spring Boot</span>
-      <span>JWT</span>
-      <span>Spring Security</span>
-    </div>
-
-    <ul>
-      <li>Autenticación JWT</li>
-      <li>Control de roles</li>
-      <li>BCrypt + Seguridad REST</li>
-    </ul>
-
-  </article>
-</a>
-
-<a href="https://github.com/JJHernan-dev/to-do-list-javafx" target="_blank" class="project-link">
-
-  <article class="card project">
-    <span class="project__code">04</span>
-
-    <div class="card__icon">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-        <rect x="4" y="3" width="16" height="18" rx="2" />
-        <path d="M8 7h8" />
-        <path d="M8 12h5" />
-        <path d="M8 17h4" />
-        <path d="M16 12l1.5 1.5L20 11" />
-      </svg>
-    </div>
-
-    <h3>Task Manager Desktop App</h3>
-
-    <p class="project__desc">
-      Aplicación de escritorio desarrollada con JavaFX para la gestión
-      visual de tareas. Incluye persistencia de datos, actualización
-      dinámica de interfaz y diseño modular basado en MVC.
-    </p>
-
-    <div class="tags">
-      <span>Java</span>
-      <span>JavaFX</span>
-      <span>MVC</span>
-      <span>SceneBuilder</span>
-    </div>
-
-    <ul>
-      <li>Persistencia de datos</li>
-      <li>UI dinámica con JavaFX</li>
-      <li>Arquitectura MVC</li>
-    </ul>
-
-  </article>
-</a>
-
+          <article class="project-card reveal">
+            <h4>Gestor de Tareas</h4>
+            <p>Aplicación de escritorio en JavaFX para la gestión de tareas personales.</p>
+            <div class="tags">
+              <span>Java</span><span>JavaFX</span>
+            </div>
+            <a class="btn btn-outline" href="https://github.com/JJHernan-dev/to-do-list-javafx" target="_blank" rel="noopener">GitHub →</a>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTACT -->
-  <section id="contacto" class="section section--contact">
-    <div class="container">
-      <div class="section__head center">
-        <p class="eyebrow">// 05 · Contacto</p>
-        <h2 class="section__title">¿Conectamos?</h2>
-        <p class="contact__lead">Abierto a oportunidades, colaboración y conversaciones sobre tecnología.</p>
+    <!-- GITHUB -->
+    <section id="github" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">07</span>
+          <h3>GitHub</h3>
+          <div class="section-line"></div>
+        </div>
+        <div class="github-card reveal">
+          <div>
+            <h4>Mi repositorio de proyectos</h4>
+            <p class="muted">Explora mis proyectos personales, laboratorios y documentación técnica desarrollados en mi aprendizaje continuo.</p>
+          </div>
+          <a class="btn btn-primary" href="https://github.com/JJHernan-dev" target="_blank" rel="noopener">Visitar GitHub →</a>
+        </div>
       </div>
-      <div class="contact-grid">
-        <a class="card contact-card" href="mailto:jjhernan.dev@gmail.com">
-          <div class="card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <rect x="3" y="5" width="18" height="14" rx="2" />
-              <path d="m3 7 9 6 9-6" />
-            </svg>
-          </div>
-          <span class="contact__label">Email</span>
-          <span class="contact__value">jjhernan.dev@gmail.com</span>
-        </a>
-        <a class="card contact-card" href="https://github.com/JJHernan-dev" target="_blank" rel="noreferrer noopener">
-          <div class="card__icon">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5Z" />
-            </svg>
-          </div>
-          <span class="contact__label">GitHub</span>
-          <span class="contact__value">github.com/JJHernan-dev</span>
-        </a>
-        <a class="card contact-card" href="https://www.linkedin.com/in/juanjesus-gh/" target="_blank"
-          rel="noreferrer noopener">
-          <div class="card__icon">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.1c.5-1 1.9-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21h-4V9Z" />
-            </svg>
-          </div>
-          <span class="contact__label">LinkedIn</span>
-          <span class="contact__value">linkedin.com/in/juanjesus-gh</span>
-        </a>
-        <a class="card contact-card" href="cv/CV_JuanJesus_Gonzalez_Hernandez.pdf" target="_blank" download>
-          <div class="card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M12 3v12m0 0 4-4m-4 4-4-4" />
-              <path d="M5 21h14" />
-            </svg>
-          </div>
-          <span class="contact__label">Currículum</span>
-          <span class="contact__value">Descargar CV</span>
-        </a>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">08</span>
+          <h3>Contacto</h3>
+          <div class="section-line"></div>
+        </div>
+        <p class="reveal muted contact-intro">Si deseas ponerte en contacto conmigo, puedes hacerlo desde linkedin.</p>
+        <div class="contact-grid reveal">
+          <a class="contact-btn" href="https://www.linkedin.com/in/juanjesus-gh/" target="_blank" rel="noopener">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-arrow">→</span>
+          </a>
+
+
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer class="footer">
-    <div class="container footer__inner">
-      <p>© <span id="year"></span> Juan Jesús González Hernández · Técnico IT</p>
-      <p class="muted">Construido con HTML, CSS y JS · Tema oscuro tech minimalista</p>
+    <div class="container footer-inner">
+      <span class="mono muted">© <span id="year"></span> Juan Jesús Hernández</span>
+      <span class="mono muted">Construido con HTML · CSS · JS</span>
     </div>
   </footer>
 
   <script src="script.js"></script>
+  <script>
+lucide.createIcons();
+</script>
 </body>
-
 </html>
